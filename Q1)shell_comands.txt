@@ -1,0 +1,63 @@
+ls | wc -l
+
+touch cdac.txt
+
+mkdir data1 data2 data3
+
+useradd dac
+
+groups $USER
+
+
+
+Output:-
+
+
+dac@dac-58:~$ mkdir osexam
+dac@dac-58:~$ cd osexam
+dac@dac-58:~/osexam$ touch cdac.txt
+dac@dac-58:~/osexam$ vi cdac.txt
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ mkdir data1 data2 data3
+dac@dac-58:~/osexam$ ls
+cdac.txt  data1  data2  data3
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ ls | wc -l
+4
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ useradd dac
+useradd: user 'dac' already exists
+dac@dac-58:~/osexam$ useradd dac2
+useradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+dac@dac-58:~/osexam$ sudo useradd dac2
+[sudo] password for dac:
+Sorry, try again.
+[sudo] password for dac:
+sudo: 1 incorrect password attempt
+dac@dac-58:~/osexam$ //Password was unavailable
+-bash: //Password: No such file or directory
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ ^C
+dac@dac-58:~/osexam$ group $dac
+Command 'group' not found, did you mean:
+  command 'groups' from deb coreutils (9.4-2ubuntu2)
+Try: sudo apt install <deb name>
+dac@dac-58:~/osexam$ groups $dac
+dac adm dialout cdrom floppy sudo audio dip video plugdev users netdev docker
+dac@dac-58:~/osexam$
+
+
+
+
+git init sum_even_100
+
+
+docker build -t EvenSum_img .
+
+docker run -it EvenSum_img
