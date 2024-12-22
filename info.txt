@@ -1,0 +1,7 @@
+a)create a project select simple maven project with all required dependencies 
+b)write a selenium script to automate "Simple 7 Char Validator" 
+i) open "https://testpages.eviltester.com/styled/apps/7charval/simple7charvalidation.html
+ii)Enter any number and click "Check input button"
+iii) verify the result
+
+c) Create new maven project in jenkins (use above project pom.xml) and execute the job with goal "clean test"
