@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "enetr number of drectories u wanna create" n
+
+for ((i=1; i<=n; i++));
+        do
+          dirname="ndir$i"
+          mkdir "$dirname"
+          echo "craeted directory"
+  done
+  echo "sucessfully created $ directories"
