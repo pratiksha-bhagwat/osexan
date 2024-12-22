@@ -1,0 +1,25 @@
+ sudo useradd dac
+
+id dac
+
+
+ groups $dac
+pratiksha adm dialout cdrom floppy sudo audio dip video plugdev users netdev
+
+pratiksha@DESKTOP-2R0FA1I:~$ ls | wc -l
+1
+pratiksha@DESKTOP-2R0FA1I:~$ touch cadc.txt
+pratiksha@DESKTOP-2R0FA1I:~$ vi cdac.txt
+pratiksha@DESKTOP-2R0FA1I:~$ cat cdac.txt
+hi i  am pratiksha
+pratiksha@DESKTOP-2R0FA1I:~$ mkdir f1 f2 f3
+pratiksha@DESKTOP-2R0FA1I:~$ rmdir f1
+pratiksha@DESKTOP-2R0FA1I:~$ rmdir f2 f3
+pratiksha@DESKTOP-2R0FA1I:~$ ls
+cadc.txt  cdac.txt  osexam
+pratiksha@DESKTOP-2R0FA1I:~$ mkdir dir1 dir2 dir3
+pratiksha@DESKTOP-2R0FA1I:~$ ls
+cadc.txt  cdac.txt  dir1  dir2  dir3  osexam
+pratiksha@DESKTOP-2R0FA1I:~$ ls | wc -l
+6
+pratiksha@DESKTOP-2R0FA1I:~$
